@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./asset/style/style.css" />
+    <link rel="icon" href="./asset/icons/icon_notes.svg" type="icon/svg" />
+    <title>Заметки</title>
+  </head>
+  <body>
+    <header class="header">
+      <!-- <a href="#">Виктория</a> -->
+    </header>
+    <main class="notes">
+      <aside class="notes__comeback">
+        <a href="index.html">На&nbspглавную</a>
+      </aside>
+      <div class="notes__wrapper">
+        <h2>Семантическая верстка и разметка</h2>
+        <section class="notes__tasks">
+          <h3>Задачи</h3>
+          <ul id="taskList">
+            <li>
+              <input type="checkbox" class="checkbox" />
+              Посмотреть видео
+              <button class="deleteTask button-delete">X</button>
+            </li>
+            <li>
+              <input type="checkbox" class="checkbox" /> Ответить на вопросы
+              (тест)
+              <button class="deleteTask button-delete">X</button>
+            </li>
+          </ul>
+          <input
+            class="notes__input"
+            type="text"
+            id="taskInput"
+            placeholder="Текст задачи"
+          />
+          <button id="addTask" class="button-notes">Добавить</button>
+        </section>
+
+        <section class="notes__links">
+          <h3>Полезные ссылки</h3>
+          <div id="linkList"></div>
+          <input
+            class="notes__input"
+            type="text"
+            id="linkInput"
+            placeholder="Добавь ссылку"
+          />
+          <button id="addLink" class="button-notes">Добавить</button>
+        </section>
+        <section class="notes__points">
+          <h3>Заметки</h3>
+          <input class="notes__input" type="text" placeholder="Текст заметки" />
+          <button class="button-notes">Добавить</button>
+        </section>
+      </div>
+      <aside class="notes__progress">Мой&nbspпрогресс</aside>
+    </main>
+    <footer class="footer"></footer>
+    <script src="/asset/notes.js"></script>
+  </body>
+</html>
