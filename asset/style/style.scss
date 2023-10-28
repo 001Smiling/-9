@@ -1,3 +1,25 @@
 @import "./scss/normalize";
 @import "./scss/components/main";
 @import "./scss/components/notes";
+.task-progress {
+    height: 5px;
+    transition: width 0.3s;
+}
+
+.task-progress.completed {
+    background-color: green;
+}
+
+.task-progress.incomplete {
+    background-color: red;
+body.light-theme {
+    font-family: 'Inter', sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+body.dark-theme .notes__wrapper{
+    font-family: 'Inter', sans-serif;
+    background-color: #333;
+    color: #fff;
+}}
