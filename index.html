@@ -1,72 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./asset/style/style.css" />
-    <link rel="icon" href="./asset/icons/icon_notes.svg" type="icon/svg" />
-    <title>Мой учебный план</title>
-  </head>
 
-  <body>
-    <div class="conteyner">
-      <header>
-        <p class="title">Мой учебный план</p>
-        <form>
-          <p>
-            <input
-              class="search-input"
-              id="input"
-              name="search"
-              placeholder="Поиск"
-            />
-            <!-- <input class="search-button" type="submit" value="Найти"> -->
-          </p>
-        </form>
-      </header>
-      <main>
-        <!-- <aside class="projects">Проекты</aside> -->
-        <div class="wrapper">
-          <div class="box1">
-            <a class="link" href="notes1.html">Введение в HTML</a>
-            <progress class="progress" value="100" max="100"></progress>
-          </div>
-          <div class="box1">
-            <a class="link" href="notes2.html">Семантическая верстка</a>
-            <progress class="progress" value="90" max="100"></progress>
-          </div>
-          <div class="box1">
-            <a class="link" href="notes3.html">Графика</a>
-            <progress class="progress" value="80" max="100"></progress>
-          </div>
-          <div class="box1">
-            <a class="link" href="#">Знакомство с CSS</a>
-            <progress class="progress" value="70" max="100"></progress>
-          </div>
-          <div class="box1">
-            <a class="link" href="#">Позиционирование</a>
-            <progress class="progress" value="60" max="100"></progress>
-          </div>
-          <div class="box1">
-            <a class="link" href="#">CSS Grid</a>
-            <progress class="progress" value="50" max="100"></progress>
-          </div>
-          <div class="box1">
-            <a class="link" href="#">Адаптивная вёрстка</a>
-            <progress class="progress" value="50" max="100"></progress>
-          </div>
-          <div class="box1">
-            <a class="link" href="#">Bootstrap</a>
-            <progress class="progress" value="50" max="100"></progress>
-          </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./asset/style/style.css" />
+  <link rel="icon" href="./asset/icons/icon_notes.svg" type="icon/svg" />
+  <title>Мой учебный план</title>
+</head>
+
+<body>
+  <div class="conteyner">
+    <header>
+      <p class="title">Мой учебный план</p>
+      <form>
+        <p>
+          <input class="search-input" id="input" name="search" placeholder="Поиск" />
+          <!-- <input class="search-button" type="submit" value="Найти"> -->
+        </p>
+      </form>
+    </header>
+    <main>
+      <!-- <aside class="projects">Проекты</aside> -->
+      <div class="wrapper">
+        <div class="box1">
+          <a class="link" href="notes1.html">Введение в HTML</a>
+          <progress class="progress" value="100" max="100"></progress>
         </div>
-      </main>
-    </div>
+        <div class="box1">
+          <a class="link" href="notes2.html">Семантическая верстка</a>
+          <progress class="progress" value="90" max="100"></progress>
+        </div>
+        <div class="box1">
+          <a class="link" href="notes3.html">Графика</a>
+          <progress class="progress" value="80" max="100"></progress>
+        </div>
+        <div class="box1">
+          <a class="link" href="#">Знакомство с CSS</a>
+          <progress class="progress" value="70" max="100"></progress>
+        </div>
+        <div class="box1">
+          <a class="link" href="#">Позиционирование</a>
+          <progress class="progress" value="60" max="100"></progress>
+        </div>
+        <div class="box1">
+          <a class="link" href="#">CSS Grid</a>
+          <progress class="progress" value="50" max="100"></progress>
+        </div>
+        <div class="box1">
+          <a class="link" href="#">Адаптивная вёрстка</a>
+          <progress class="progress" value="50" max="100"></progress>
+        </div>
+        <div class="box1">
+          <a class="link" href="#">Bootstrap</a>
+          <progress class="progress" value="50" max="100"></progress>
+        </div>
+        <div id="blocksContainer">
+        </div>
+        <button id="addBtn">+</button>
+      </div>
+  </div>
+  </main>
+  </div>
 
-    <script src="./app.js"></script>
-  </body>
+  <script src="./app.js"></script>
+</body>
+
 </html>

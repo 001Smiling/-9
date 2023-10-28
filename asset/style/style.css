@@ -530,3 +530,25 @@ body.dark-theme .notes__wrapper {
 .task-progress.incomplete {
   background-color: red;
 }/*# sourceMappingURL=style.css.map */
+
+#addBtn{
+  background-color: #111111;
+  height: 40px;
+  width: 30px; 
+  color:white; 
+  border-radius:50%; 
+  font-size:30px; 
+  margin-top: 40px;
+}
+#blocksContainer{
+  background-color: white;
+  width: 255px;
+  height: 144px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  font-size: 18px;
+}
