@@ -46,10 +46,16 @@ body {
     font-size: 18px;
 }
 
+.link {
+    text-decoration: none;
+    color: black;
+}
+
 .progress {
     width: 152px;
     height: 14px;
-    color: rgba(109, 45, 240, 1);
+    /* color: rgba(109, 45, 240, 1); */
+
 }
 
 .wrapper {
