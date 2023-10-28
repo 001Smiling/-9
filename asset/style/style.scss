@@ -2,24 +2,53 @@
 @import "./scss/components/main";
 @import "./scss/components/notes";
 .task-progress {
-    height: 5px;
-    transition: width 0.3s;
+  height: 5px;
+  transition: width 0.3s;
 }
 
 .task-progress.completed {
-    background-color: green;
+  background-color: green;
 }
 
 .task-progress.incomplete {
-    background-color: red;
-body.light-theme {
-    font-family: 'Inter', sans-serif;
+  background-color: red;
+  body.light-theme {
+    font-family: "Inter", sans-serif;
     background-color: #fff;
     color: #000;
-}
+  }
 
-body.dark-theme .notes__wrapper{
-    font-family: 'Inter', sans-serif;
+  body.dark-theme .notes__wrapper {
+    font-family: "Inter", sans-serif;
     background-color: #333;
     color: #fff;
-}}
+  }
+}
+
+body.light-theme {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  /* Другие стили светлой темы */
+}
+
+// Темная тема
+body.dark-theme .notes__wrapper {
+  font-family: "Inter", sans-serif;
+  background-color: #222222;
+  color: #ffffff;
+  /* Другие стили темной темы */
+}
+
+.task-progress {
+  height: 5px;
+  transition: width 0.3s;
+}
+
+.task-progress.completed {
+  background-color: green;
+}
+
+.task-progress.incomplete {
+  background-color: red;
+}
