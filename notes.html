@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="./asset/style/style.css" />
-    <!-- <link rel="icon" href="./assets/icons/logo_favicon.svg" type="icon/svg" /> -->
+    <link rel="icon" href="./asset/icons/icon_notes.svg" type="icon/svg" />
     <title>Заметки</title>
   </head>
   <body>
@@ -17,16 +21,35 @@
         <h2 class="title__h2">Семантическая верстка и разметка</h2>
         <section class="notes__tasks">
           <h3>Задачи</h3>
+          <ul id="taskList">
+            <li>
+              <input type="checkbox" /> Посмотреть видео
+              <button class="deleteTask">Удалить</button>
+            </li>
+            <li>
+              <input type="checkbox" /> Ответить на вопросы (тест)
+              <button class="deleteTask">Удалить</button>
+            </li>
+          </ul>
+          <input type="text" id="taskInput" placeholder="Текст задачи" />
+          <button id="addTask" class="button">Добавить</button>
         </section>
+
         <section class="notes__links">
           <h3>Полезные ссылки</h3>
+          <div id="linkList"></div>
+          <input type="text" id="linkInput" placeholder="Добавь ссылку" />
+          <button id="addLink" class="button">Добавить</button>
         </section>
         <section class="notes__points">
           <h3>Заметки</h3>
+          <input type="text" placeholder="Текст заметки" />
+          <button class="button">Добавить</button>
         </section>
       </div>
       <aside class="notes__progress">Мой прогресс</aside>
     </main>
     <footer class="footer"></footer>
+    <script src="/asset/notes.js"></script>
   </body>
 </html>
