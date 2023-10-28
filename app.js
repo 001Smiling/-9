@@ -35,7 +35,7 @@ addBtn.addEventListener('click', function() {
     const name = input.value;
 
     // Создаем элемент для отображения названия
-    const nameText = document.createElement('span');
+    const nameText = document.createElement('a');
     nameText.textContent = name;
 
     // Заменяем инпут на название
@@ -67,7 +67,7 @@ if (localStorage.getItem('blocks')) {
 
     // Создаем элементы блока
     const block = document.createElement('div');
-    const nameText = document.createElement('span');
+    const nameText = document.createElement('a');
     const deleteBtn = document.createElement('button');
     
     nameText.textContent = savedBlock;
@@ -80,7 +80,7 @@ if (localStorage.getItem('blocks')) {
       
       // Сохраняем обновленное состояние блоков
       const blocks = Array.from(blocksContainer.children).map(function(el) {
-        return el.querySelector('span').textContent;
+        return el.querySelector('a').textContent;
       });
       localStorage.setItem('blocks', JSON.stringify(blocks));
     });
